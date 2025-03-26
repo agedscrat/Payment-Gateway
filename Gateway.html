@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayEase - Try Premium Free</title>
+  <style>
+    :root {
+      --primary: #0066ff;
+      --accent: #ff3366;
+      --dark: #1a1a2e;
+      --light: #f7f7ff;
+      --success: #00cc88;
+      --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      background-color: var(--light);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 480px;
+      padding: 24px;
+    }
+    
+    .card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    
+    .card-header {
+      background: var(--dark);
+      color: white;
+      padding: 24px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .card-header h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+      position: relative;
+    }
+    
+    .card-header p {
+      opacity: 0.9;
+      margin-bottom: 16px;
+      position: relative;
+    }
+    
+    .badge {
+      background: var(--accent);
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 12px;
+      position: relative;
+    }
+    
+    .card-body {
+      padding: 24px;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: var(--dark);
+    }
+    
+    input {
+      width: 100%;
+      padding: 14px;
+      border: 2px solid #e1e1e1;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+    
+    input:focus {
+      border-color: var(--primary);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
+    }
+    
+    .row {
+      display: flex;
+      gap: 16px;
+    }
+    
+    .col {
+      flex: 1;
+    }
+    
+    button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 16px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
+    
+    button:hover {
+      background: #0055dd;
+      box-shadow: 0 5px 15px rgba(0, 85, 221, 0.3);
+      transform: translateY(-2px);
+    }
+    
+    .secure-note {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 16px;
+      color: #666;
+      font-size: 14px;
+    }
+    
+    .trial-info {
+      background: rgba(0, 102, 255, 0.1);
+      border-left: 4px solid var(--primary);
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+    
+    .accent-circle {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0.3;
+      top: -100px;
+      right: -50px;
+    }
+    
+    .primary-circle {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: var(--primary);
+      opacity: 0.2;
+      bottom: -70px;
+      left: -70px;
+    }
+    
+    .card-logos {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 16px;
+    }
+    
+    .card-logo {
+      width: 40px;
+      height: 25px;
+      background: #eee;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <div class="accent-circle"></div>
+        <div class="primary-circle"></div>
+        
+        <h1>Start Your Premium Experience With Us</h1>
+        
+      </div>
+      <div class="card-body">
+        <div class="trial-info">
+          <strong>Your trial includes:</strong> Full access to all premium features, priority support, and unlimited transactions with no hidden fees.
+        </div>
+        
+        <form>
+          <div class="form-group">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19">
+          </div>
+          
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="expiry">Expiration Date</label>
+                <input type="text" id="expiry" placeholder="MM/YY">
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="cvv">Security Code</label>
+                <input type="text" id="cvv" placeholder="CVV" maxlength="4">
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="name">Cardholder Name</label>
+            <input type="text" id="name" placeholder="Full Name">
+          </div>
+          
+          <button type="submit">Start Your Free Trial</button>
+          
+          <div class="secure-note">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 1.33334L2 3.33334V7.33334C2 11.0133 4.56 14.3733 8 15.3333C11.44 14.3733 14 11.0133 14 7.33334V3.33334L8 1.33334Z" fill="#666666"/>
+              <path d="M6 8.66667L7.33333 10L10.6667 6.66667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Secure 256-bit SSL encrypted payment
+          </div>
+          
+          <div class="card-logos">
+            <div class="card-logo"></div>
+            <div class="card-logo"></div>
+            <div class="card-logo"></div>
+            <div class="card-logo"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
